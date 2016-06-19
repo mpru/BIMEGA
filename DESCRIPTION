@@ -1,0 +1,45 @@
+Package: BIMEGA
+Title: BIMEGA: BIvariate Methylation and Expression GAussian mixture model
+Version: 1.0.0
+Authors@R: c(
+    person("Marcos", "Prunello", email = "marcosprunello@gmail.com", role = c("aut", "cre")),
+    person("Olivier", "Gevaert", email = "ogevaert@stanford.edu", role = "aut"))
+Description: BIMEGA integrates methylation (MET) and gene expression (GE) data
+    to identify genes regulated by hyper- or hypo-methylation. BIMEGA is based on
+    a bivariate Gaussian mixture model to identify methylation states and compares
+    them with the normal DNA methylation state. BIMEGA uses Differential Methylation
+    value or DM-values, defined as the difference of a methylation state with the
+    normal methylation state, to characterize each methylation state.
+Depends:
+    R (>= 3.2.0)
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Author: Marcos Prunello
+Maintainer: Marcos Prunello <marcosprunello@gmail.com>
+Type: Package
+Date: 2016-06-18
+Imports:
+    foreach,
+    RColorBrewer,
+    ggplot2,
+    RCurl,
+    impute,
+    data.table,
+    limma,
+    R.matlab,
+    digest,
+    robustbase,
+    mclust,
+    dplyr,
+    ellipse
+Suggests:
+    BiocStyle,
+    doParallel,
+    devtools,
+    knitr,
+    rmarkdown
+biocViews:
+    DNAMethylation,StatisticalMethod,DifferentialMethylation,GeneRegulation,GeneExpression,MethylationArray,DifferentialExpression,Pathways,Network
+RoxygenNote: 5.0.1
+VignetteBuilder: knitr
